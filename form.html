@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="css/form-style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Форма обратной связи</h2>
+        <form action="https://httpbin.org/post" method="POST">
+            <label for="name">ФИО:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <div class="radio-group">
+                <label>Откуда узнали о нас:</label>
+                <label><input type="radio" name="source" value="Социальные сети">Социальные сети</label>
+                <label><input type="radio" name="source" value="Реклама">Реклама</label>
+                <label><input type="radio" name="source" value="Друзья">Друзья</label>
+            </div>
+
+            <label for="type">Тип обращения:</label>
+            <select id="type" name="type">
+                <option value="Жалоба">Жалоба</option>
+                <option value="Предложение">Предложение</option>
+            </select>
+
+            <label for="message">Текст сообщения:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <label for="attachments">Вложения:</label>
+            <input type="file" id="attachments" name="attachments">
+
+            <label>
+                <input type="checkbox" name="consent" required>
+                Даю согласие на обработку персональных данных
+            </label>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</body>
+</html>
