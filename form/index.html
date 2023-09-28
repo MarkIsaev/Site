@@ -11,10 +11,10 @@
         <h2>Форма обратной связи</h2>
         <form action="https://httpbin.org/post" method="POST">
             <label for="name">ФИО:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" placeholder="Введите ФИО" required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="Введите email" required>
 
             <div class="radio-group">
                 <label>Откуда узнали о нас:</label>
@@ -30,7 +30,7 @@
             </select>
 
             <label for="message">Текст сообщения:</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
+            <textarea id="message" name="message" rows="6" placeholder="Введите текст жалобы" required></textarea>
 
             <label for="attachments">Вложения:</label>
             <input type="file" id="attachments" name="attachments">
