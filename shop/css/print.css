@@ -1,0 +1,8 @@
+.header, .footer, a {
+    display: none;
+}
+
+body {
+    color: #000;
+    background-color: #fff;
+}

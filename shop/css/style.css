@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    
+    align-items: center;
+    padding: 1rem 20%;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #bbb, -5px -5px 15px #fff;
+    z-index: 1000;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #bbb, -5px -5px 15px #fff;
+    z-index: 1000;
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #bbb, -5px -5px 15px #fff;
+}
+
+a:hover {
+    background-color: #e0e0e0;
+}
+
+.main-content {
+    padding: 7rem 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #bbb, -5px -5px 15px #fff;
+    padding: 1rem;
+    text-align: center;
+    width: calc(23.33% - 1rem);
+    margin: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h2 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.product-card .price {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.hero { 
+    border-radius: 10px;
+    padding: 8rem;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 5rem;
+    color: #e15024;
+    animation: shimmer 4s infinite linear;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(200%);
+    }
+} 
+
+.main-content {
+    padding: 10rem 5%;
+    text-align: justify;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #e15024;
+    
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.contact-info address {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
